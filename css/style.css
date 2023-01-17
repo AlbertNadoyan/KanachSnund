@@ -1,0 +1,392 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+    background-image: linear-gradient(green, white);
+}
+
+.site_logo>a>img{
+    width: 280px;
+    height: 150px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #279c21;
+    background-image: linear-gradient(green, white);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.slideshow-container {
+    min-width: 1200px;
+    min-height: 800px;
+    position: relative;
+    margin: auto;
+    border: 3px solid green;
+    padding: 15px;
+}
+
+.slideshow-container>div>img{
+    min-width: 1200px;
+    max-width: 1200px;
+    min-height: 800px;
+    max-height: 800px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.site_logo>img{
+    width: 300px;
+}
+
+.menuIcon{
+    color: #279c21;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: none;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+.slideShow{
+    padding-top: 40px;
+}
+
+.container{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 900px;
+    opacity: 0.7;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.infoAndImg{
+    display: flex;
+    justify-content: center;
+    background-color: #24a33d;
+}
+
+.infoAndImg>div{
+    padding: 20px;
+}
+
+.containerInfo>img{
+    width: 500px;
+    height: 400px;
+}
+
+.containerInfo{
+    padding: 5px;
+}
+
+.containerInfo>p{
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.containerInfo> input{
+    width: 200px;
+    height: 60px;
+    color: #24a33d;
+    background-color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.containnerImg>img{
+    width: 600px;
+    height: 800px;
+}
+
+.productLine1{
+    display: flex;
+    justify-content: center;
+}
+
+.productLine1>div>img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
+    padding: 5px;
+}
+
+.productLine1>div>img:hover{
+    transform: scale(1.2);
+}
+
+.productLine1>div{
+    padding: 20px;
+}
+
+.product{
+    border-top: 3px solid white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #24a33d;
+    margin-bottom: 20px;
+}
+
+.product>h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer{
+    background-color: #24a33d;
+    display: flex;
+}
+
+
+.footer>div>form>input{
+    width: 459px;
+    height: 40px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer>div>form>textarea{
+    border-radius: 5px;
+}
+
+.userReview{
+    background-color: green;
+    background-image: linear-gradient(green, white);
+    width: 100%;
+    padding-top: 150px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.socialMedi{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    background-image: linear-gradient(white, green);
+}
+
+.socialMedi>div{
+    padding-left: 10px;
+}
+
+.socialMedi>div:hover{
+    transform: scale(1.2);
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.products>div{
+    display: flex;
+    justify-content: center;
+    border: 2px solid green;
+    border-radius: 8px;
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.products>div>div>p{
+    padding: 25px;
+}
+
+.products>div>div>h2{
+    text-align: center;
+}
+
+.products>div>div>img{
+    width: 414px;
+    height: 414px;
+}
+
+.allProduct{
+    background-color: white;
+    background-image: linear-gradient(white, green);
+}
+
+.mapouter{
+  position:relative;
+  text-align:right;
+  height:530px;
+  width:1019px;
+}
+
+#gmap_canvas{
+  overflow:hidden;
+  background:none!important;
+  height:530px;
+  width:1019px;
+}
+
+.contactUs{
+  background-image: url("../images/bg2.png");
+  padding-top: 50px;
+  padding-left: 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 900px;
+}
+
+.contactUs>div{
+  padding-bottom: 20px;
+}
+
+.contactUs img{
+  width: 100px;
+  height: 100px;
+}
+
+.contactUs a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.contactUs p{
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1500px) {
+  .footer{
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .mapouter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .productLine1{
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media only screen and (max-width: 1350px){
+  .infoAndImg{
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+@media only screen and (max-width: 1300px){
+  .slideshow-container>div>img{
+      min-width: 600px;
+      max-width: 600px;
+      min-height: 400px;
+      max-height: 400px;
+  }
+  .slideshow-container {
+    min-width: 600px;
+    min-height: 400px;
+    position: relative;
+    margin: auto;
+    border: 3px solid green;
+    padding: 15px;
+}
+
+@media only screen and (max-width: 1450px){
+  .products>div{
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  @media only screen and (max-width: 950px){
+    .products{
+      display: flex;
+      flex-wrap: wrap-reverse;
+    }
+}
